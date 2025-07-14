@@ -6,6 +6,7 @@ const app = express();
 const port = 3000;
 const MongooseURL = "mongodb://localhost:27017/mydatabase";
 
+//home-route
 app.get("/home", (req, res) => {
   res.send("Home Page");
 });
