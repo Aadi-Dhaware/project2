@@ -1,4 +1,3 @@
-
 // added new backend code - button
 // added new backend code - form
 const express = require("express");
@@ -12,8 +11,8 @@ app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
 });
 
-app.get("/", (req, res) => {
-  res.send("Hello World");
+app.get("/about", (req, res) => {
+  res.send("About Page");
 });
 
 app.post("/submit", (req, res) => {
