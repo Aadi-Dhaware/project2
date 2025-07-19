@@ -23,9 +23,6 @@ app.post("/submit", (req, res) => {
   res.send("Form submitted successfully");
 });
 
-app.get("/dev", (req, res) => {
-  res.send("On Dev Branch");
-});
 
 app.listen(port, () => {
   Mongoose.connect(MongooseURL);
